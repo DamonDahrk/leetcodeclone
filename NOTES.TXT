@@ -1,0 +1,54 @@
+Set up Docker yml , started off with next js set up.
+Proj avoid classic TS and uses JS with no src file
+also prisma and postgres (via docker) 
+
+now using Clerk auth
+
+Clerk handles login, signup, sessions, and user 
+profiles so you don’t have to build auth from scratch.
+A managed Identity Provider (IdP) + Authentication-as-a-Service (AaaS)
+
+In system design terms, Prisma is a:
+
+Data Access Layer (DAL) + ORM + Schema Management Tool
+
+It sits between your application logic and the database, abstracting raw SQL and enforcing data consistency.
+
+API / Backend Service
+        ↓
+   Prisma Client
+        ↓
+   Database (Postgres / MySQL / MongoDB)
+
+
+Docker handles
+
+Environment consistency
+
+Dependency isolation
+
+Application packaging
+
+Fast startup & teardown
+
+Predictable deployments
+
+Docker does NOT handle
+
+Auto-scaling (Kubernetes does)
+
+Load balancing
+
+Service discovery
+
+Secrets management (external tools)
+
+🧩 System Design Classification
+Aspect	Docker
+Layer	Infrastructure
+Pattern	Containerization
+Concern	Deployment & runtime isolation
+Scaling	Horizontal via orchestration
+Reliability	Immutable deployments
+
+REMMEBER TO KEEP AUTH INSIDE THE APP FOLDER FFS
