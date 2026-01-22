@@ -77,3 +77,23 @@ us to allow to change user role dynamically from admin to user
 and based on that we will be seeing create a problem on the 
 navbar 
 edit 1 
+
+JUDGE 0 CODE EXCECUTION ENGINE 
+JUDGE0 SET UP COMPLETED HOSTING ON 
+
+User should be able to create a problem 
+title 
+desc
+difficulty level 
+tags 
+
+testcases, codeSnippets, referenceSolution
+
+problem -> judge0 backend (based on input and then output) -> db 
+all the testcases is passed by judge0 backend
+
+judge0 will only run the code, basis on that testcases, input, expected_output
+
+reference Solution too
+
+String? Means it is nullable
