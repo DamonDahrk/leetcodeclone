@@ -52,3 +52,8 @@ Scaling	Horizontal via orchestration
 Reliability	Immutable deployments
 
 REMMEBER TO KEEP AUTH INSIDE THE APP FOLDER FFS
+
+THE WHOLE ISSUE WAS CLERK JWT TOKEN MISTMATCH
+FIXED BY DDATE TIME AUTO SCALING 
+
+npx prisma studio to check 
