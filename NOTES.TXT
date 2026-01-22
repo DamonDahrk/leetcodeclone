@@ -57,3 +57,22 @@ THE WHOLE ISSUE WAS CLERK JWT TOKEN MISTMATCH
 FIXED BY DDATE TIME AUTO SCALING 
 
 npx prisma studio to check 
+
+schema changed then added modules then updated async to page js 
+
+
+suppressHydrationWarning is a React / Next.js attribute used to silence hydration mismatch warnings.
+
+What “hydration” means (quick)
+
+Next.js renders HTML on the server
+
+React then hydrates it on the client (attaches event handlers)
+
+add control space for adding components (importing)
+
+handling the currentUserRole in modules/auth/actions was very safe,
+now with that async await (as well as error handling here) caused
+us to allow to change user role dynamically from admin to user
+and based on that we will be seeing create a problem on the 
+navbar 

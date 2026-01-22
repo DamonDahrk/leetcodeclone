@@ -2,7 +2,7 @@ import { clerkMiddleware,createRouteMatcher  } from '@clerk/nextjs/server';
 // remember to import routematcher and stuff 
 
 
-const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)'])
+const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)','/'])
 // .* uses regex to match all
 // routes that do not require authentication
 
