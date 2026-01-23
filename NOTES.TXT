@@ -99,3 +99,15 @@ reference Solution too
 String? Means it is nullable
 
 each tokens are different and each test cases will take seperate amount of time 
+
+resolver: zodResolver(problemSchema),
+What this means in your context 👇
+You are telling React Hook Form:
+
+“Whenever the user types, blurs, or submits — validate the entire form using problemSchema (Zod).”
+
+So:
+
+React Hook Form handles form state
+Zod defines what is valid
+zodResolver connects them

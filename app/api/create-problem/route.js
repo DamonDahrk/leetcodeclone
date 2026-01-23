@@ -1,3 +1,10 @@
+import { getJudge0LanguageId, pollBatchResults, submitBatch } from "@/lib/judge0";
+import { currentUserRole, getCurrentUser } from "@/modules/auth/actions";
+
+import { UserRole } from "@prisma/client";
+import { NextResponse } from "next/server";
+import { db } from "@/lib/db";
+import { resolveMetadata } from "next/dist/lib/metadata/resolve-metadata";
 export async function POST(request) {
     try{
 
@@ -47,7 +54,7 @@ if (!referenceSolutions || typeof referenceSolutions !== 'object'){
 
 for(const [language, solutionCode] of Object.entries(referenceSolutions)){
     // Get Judge0 Lang ID for the current language 
-    const languageId = getJudge0LanguageId() 
+    const languageId = getJudge0LanguageId(language) //remember to pass the parameter
     if(!languageId){ 
         return NextResponse.json(
             { error: `Unsupported language: ${language}` },
